@@ -102,28 +102,6 @@ console.log(reverseString(str));     //OLLEH
 
 
 //Print factorial of a number
-// function factorialize(num)  
-//     var result = num
-//     if (num === 0 || num === 1) {
-//       return 1; 
-//     while (num > 1) { 
-//       num--;
-//       result *= num;
-//     }
-//     return result;
-//   }
-//   factorialize(5);
-
-
-//   function factorialize(num) { 
-//     factorialize(5);
-//     if (num === 0 || num === 1) 
-//       return 1;
-//     for (var i = num - 1; i >= 1; i--) {
-//       num *= i;
-//     }
-//     return num;
-// }
 
 var number = 5
 if (number < 0) {
@@ -143,6 +121,19 @@ else {
     }
     console.log(fact);   //Output: 120
 }
+
+
+//   function factorialize(num) { 
+//     factorialize(5);
+//     if (num === 0 || num === 1) 
+//       return 1;
+//     for (var i = num - 1; i >= 1; i--) {
+//       num *= i;
+//     }
+//     return num;
+// }
+
+
 
 
   
