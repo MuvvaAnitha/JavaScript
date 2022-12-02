@@ -13,10 +13,10 @@ for (i = 0; i <= 100; i++) {
     }
 }
 
-
 //print uppercase
 var str1 = "welcome to javascript"
 console.log(str1.toUpperCase())
+
 
 //Print prime numbers from 1 to 100 in javascript
 for (var i = 0; i <= 100; i++) {
@@ -134,6 +134,67 @@ else {
 // }
 
 
+//Check given number is a palindrome number
+
+//logic
+
+//A number is said to be a Palindrome if the reverse of its digit is number itself. 
+//For eg. 121, 959, 1441, etc.
+
+const isPalindrome = (num) => {
+    // Finding the appropriate factor to extract the first digit
+    let factor = 1;
+    while (num / factor >= 10){
+       factor *= 10;
+    }
+    while (num) {
+       let first = Math.floor(num / factor);
+       let last = num % 10;
+       // If first and last digit not same return false
+       if (first != last){
+          return false;
+       }
+       // Removing the first and last digit from number
+       num = Math.floor((num % factor) / 10);
+       // Reducing factor by a factor of 2 as 2 digits are dropped
+       factor = factor / 100;
+    }
+    return true;
+ };
+ console.log(isPalindrome(123241));   //Output:-False
+console.log(isPalindrome(12321));      //Output:-True
+console.log(isPalindrome(145232541));   //Output:-True
+console.log(isPalindrome(1231));        //Output:-False
+
+//Check given number is a armstrong number
+
+//logic
+
+//An Armstrong number of three digits is an integer such that the sum of the cubes of its digits is equal to the number itself. 
+//For example, 371 is an Armstrong number since 3**3 + 7**3 + 1**3 = 371.
+
+
+let sum = 0;
+const num = prompt('Enter a three-digit positive integer: ');
+
+// create a temporary variable
+let temp = num;
+while (temp > 0) {
+    // finding the one's digit
+    let remainder = temp % 10;
+
+    sum += remainder * remainder * remainder;
+
+    // removing last digit from the number
+    temp = parseInt(temp / 10); // convert float into integer
+}
+// check the condition
+if (sum == num) {
+    console.log(`${num} is an Armstrong number`);
+}
+else {
+    console.log(`${num} is not an Armstrong number.`);
+}
 
 
   
