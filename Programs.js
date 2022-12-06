@@ -206,7 +206,55 @@ else {
     console.log(`${num} is not an Armstrong number.`);
 }
 
+//========================program that checks if the number is positive, negative or zero===================//
+ 
+// input from the user
+const number = parseInt(prompt("Enter a number: "));
 
+// check if number is greater than 0
+if (number > 0) {
+    console.log("The number is positive");
+}
+
+// check if number is 0
+else if (number == 0) {
+  console.log("The number is zero");
+}
+
+// if number is less than 0
+else {
+     console.log("The number is negative");
+}
+
+
+//========================JavaScript program to swap two variables===================//
+
+//take input from the users
+const prompt = require("prompt-sync")();
+let a = prompt('Enter the first variable: ');  
+let b = prompt('Enter the second variable: ');
+
+//create a temporary variable
+let temp1;
+
+//swap variables
+temp1 = a;
+a = b;
+b = temp1;
+
+console.log(`The value of a after swapping: ${a}`);  
+console.log(`The value of b after swapping: ${b}`);
+
+//OutPut
+// Enter the first variable: 4
+// Enter the second variable: 2
+// The value of a after swapping: 2
+// The value of b after swapping: 4
+  
+//Note:-
+//prompt() is a method of the Global window object found in browsers. It's not part of the JavaScript language. 
+//If you don't run your code in a browser or an environment that supports the Browser Object Model, 
+//window won't be there and if window isn't there, neither will prompt() be. Run your code in a browser.
 
 
 
