@@ -1,10 +1,11 @@
-//print even numbers from 1 to 100 in javascript
+//========================print even numbers from 1 to 100 in javascript===================//
+
 for (let i = 0; i < 100; i += 2) {
     console.log(i)
 }
 
+//========================print odd numbers from 1 to 100 in javascript===================//
 
-//print odd numbers from 1 to 100 in javascript
 //console.log(Array.from({ length: 50 }, (e, i) => (i * 2) + 1).join(' '))
 for (i = 0; i <= 100; i++) {
     if (i % 2 != 0) {
@@ -13,12 +14,14 @@ for (i = 0; i <= 100; i++) {
     }
 }
 
-//print uppercase
+//========================print uppercase in javascript===================//
+
 var str1 = "welcome to javascript"
 console.log(str1.toUpperCase())
 
 
-//Print prime numbers from 1 to 100 in javascript
+//========================Print prime numbers from 1 to 100 in javascript===================//
+
 for (var i = 0; i <= 100; i++) {
 
     var notPrime = false;
@@ -32,7 +35,10 @@ for (var i = 0; i <= 100; i++) {
     }
 }
 
-//Print Sum of odd/even numbers
+
+//========================Print Sum of odd/even numbers===================//
+
+
 var n = 6;
 var oddSum = 0;
 var evenSum = 0;
@@ -101,7 +107,8 @@ console.log(reverseString(str));     //OLLEH
 //   reverseString("hello");
 
 
-//Print factorial of a number
+//========================Print factorial of a number===================//
+
 
 var number = 5
 if (number < 0) {
@@ -134,7 +141,8 @@ else {
 // }
 
 
-//Check given number is a palindrome number
+
+//========================Check given number is a palindrome number===================//
 
 //logic
 
@@ -166,8 +174,8 @@ console.log(isPalindrome(12321));      //Output:-True
 console.log(isPalindrome(145232541));   //Output:-True
 console.log(isPalindrome(1231));        //Output:-False
 
-//Check given number is a armstrong number
 
+//========================Check given number is a armstrong number===================//
 //logic
 
 //An Armstrong number of three digits is an integer such that the sum of the cubes of its digits is equal to the number itself. 
@@ -175,6 +183,8 @@ console.log(isPalindrome(1231));        //Output:-False
 
 
 let sum = 0;
+
+//const prompt = require("prompt-sync")();
 const num = prompt('Enter a three-digit positive integer: ');
 
 // create a temporary variable
@@ -197,4 +207,6 @@ else {
 }
 
 
-  
+
+
+
