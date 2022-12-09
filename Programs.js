@@ -257,4 +257,48 @@ console.log(`The value of b after swapping: ${b}`);
 //window won't be there and if window isn't there, neither will prompt() be. Run your code in a browser.
 
 
+//========================program to find the largest among three numbers===================//
 
+
+// take input from the user
+//const prompt = require("prompt-sync")();
+const num1 = parseFloat(prompt("Enter first number: "));
+
+//parseFloat() is used to convert numeric string to number. If the string is a floating number,
+// parseFloat() converts the string into floating point number.
+
+const num2 = parseFloat(prompt("Enter second number: "));
+const num3 = parseFloat(prompt("Enter third number: "));
+let largest;
+
+// check the condition
+if(num1 >= num2 && num1 >= num3) {
+    //The numbers are compared with one another using greater than or equal to >= operator.
+    //logical AND && is also used to check two conditions.
+    largest = num1;
+}
+else if (num2 >= num1 && num2 >= num3) {
+    largest = num2;
+}
+else {
+    largest = num3;
+}
+
+// display the result
+console.log("The largest number is " + largest);
+
+///Another way
+
+//take input from the user
+const n1 = parseFloat(prompt("Enter first number: "));
+const n2 = parseFloat(prompt("Enter second number: "));
+const n3 = parseFloat(prompt("Enter third number: "));
+
+//const largest = Math.max(n1, n2, n3);
+
+// display the result
+console.log("The largest number is " + largest);
+
+//Note:-
+// Math.max() returns the largest number among the provided numbers.
+// You can use Math.min() function to find the smallest among the numbers.
